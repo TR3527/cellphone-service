@@ -24,6 +24,8 @@ public class CellPhoneApplication {
 
 
 
+
+
        // myPhone.setModel("iphone x");
 
         System.out.print("What is the serial number? ");
@@ -65,6 +67,8 @@ public class CellPhoneApplication {
         System.out.print("Who is the owner of the phone? ");
         String owner2 = read.nextLine();
 
+
+
         myPhone2.setSerialNumber(serialNumber2);
         myPhone2.setModel(model2);
         myPhone2.setCarrier(carrier2);
@@ -79,10 +83,16 @@ public class CellPhoneApplication {
         System.out.println(myPhone2.getPhoneNumber());
         System.out.println(myPhone2.getOwner());
 
+        CellPhone myphone3 = new CellPhone(serialNumber, model, carrier, phoneNumber,owner);
+
+        display(myphone3);
+
         //System.out.println(myPhone.dial(phoneNumber));
         //other display method ^
 
         myPhone.dial(phoneNumber);
+
+        myphone3.dial(phoneNumber2);
 
         display(myPhone);
         //myPhone2.setOwner("Test");
@@ -91,6 +101,13 @@ public class CellPhoneApplication {
         myPhone.dial(myPhone2.getPhoneNumber());
 
         myPhone2.dial(myPhone.getPhoneNumber());
+
+        ;
+
+
+
+
+
 
 
 
