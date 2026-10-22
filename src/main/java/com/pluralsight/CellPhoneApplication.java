@@ -9,6 +9,7 @@ public class CellPhoneApplication {
 
         CellPhone myPhone = new CellPhone();
 
+
        // myPhone.setModel("iphone x");
 
         System.out.print("What is the serial number? ");
@@ -40,9 +41,10 @@ public class CellPhoneApplication {
 //
 
 
+        //System.out.println(myPhone.dial(phoneNumber));
+        //other display method ^
 
-
-
+        myPhone.dial(phoneNumber);
 
 
 
